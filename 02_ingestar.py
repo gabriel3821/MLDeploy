@@ -7,7 +7,6 @@ def data_structure(train_1, train_2, df_name):
     _df.to_csv(df_name+'.csv', encoding='utf-8')
 
 def split_data(dataframe_name, validation=False, ss=0.1):
-    datasets = pd.DataFrame()
     df = pd.read_csv(dataframe_name)
     X = df.drop('test_result',axis=1) 
     y = df['test_result']
