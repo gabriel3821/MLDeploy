@@ -10,7 +10,7 @@ def data_metrics(yP, yL):
 
 def split_data(dataframe_name):
     df = pd.read_csv(dataframe_name)
-    y_01 = df['test_result']
+    y_01 = df.test_result
     X_01 = df.drop('test_result',axis=1) 
 
     return (X_01,y_01)
