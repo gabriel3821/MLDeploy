@@ -21,6 +21,7 @@ def data_prediction(log_model, X_01):
 
 def test(test_name, filename='mlparams'):
     log_test = pickle.load(open(filename, 'rb'))
+    print(type(log_test))
     (X, y) = split_data(test_name)
     y_pred = data_prediction(log_test, X)
     print('Metricas Validación')
