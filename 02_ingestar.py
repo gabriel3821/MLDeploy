@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-def data_structure(train_1, train_2, df_name)
+def data_structure(train_1, train_2, df_name):
     _df = train_1.copy()
     _df['test_result'] = train_2
     _df.to_csv(df_name+'.csv', encoding='utf-8')
